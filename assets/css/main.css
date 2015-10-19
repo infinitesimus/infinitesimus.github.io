@@ -1754,9 +1754,26 @@
 			padding-left: 0.5em;
 		}
 
+        .container > ul {
+            text-align: left;
+            max-width: 500px;
+            margin-top: 2.8em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container > ul li {
+            list-style-type: disc;
+            list-style-position: inside;
+            text-indent: -1em;
+            padding-left: 1em;
+            padding-bottom: 1.1em;
+            line-height: 1.2em;
+        }
+
 	ul.icons {
 		cursor: default;
-	}
+    }
 
 		ul.icons li {
 			display: inline-block;
@@ -1949,6 +1966,26 @@
 			.item header h3 {
 				font-size: 1em;
 			}
+/* Email in sidebar */
+	.email-sidebar {
+            text-align: center;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 1em;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8em;
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+	}
+
+    .email-sidebar > a {
+            border-bottom: none;
+            font-weight: 100;
+    }
 
 /* Icons */
 
@@ -1970,6 +2007,8 @@
 
 		.icon > .label {
 			display: none;
+            width: 100%;
+            margin: auto;
 		}
 
 /* Header */
@@ -2007,7 +2046,7 @@
 		}
 
 			#header .icons a {
-				color: #41484c;
+				color: rgba(255, 255, 255, 0.5);
 				-moz-transition: color 0.35s ease-in-out;
 				-webkit-transition: color 0.35s ease-in-out;
 				-ms-transition: color 0.35s ease-in-out;
@@ -2185,6 +2224,11 @@
                 color: aliceblue;
 			}
 
+			#main > section.three strong {
+                color: aliceblue;
+                font-weight: 400;
+			}
+
 			#main > section.four {
 				background-color: #fff;
 			}
@@ -2252,7 +2296,11 @@
 		/* List */
 
 			ul.icons li a {
-				width: 1.75em;
+				width: 100%;
+			}
+        
+            ul.icons a.icon {
+				width: 2em;
 			}
 
 		/* Item */
